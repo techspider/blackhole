@@ -41,11 +41,18 @@
             this.bh_desc = new System.Windows.Forms.Label();
             this.bh_title = new System.Windows.Forms.Label();
             this.bh_image = new System.Windows.Forms.PictureBox();
+            this.holeActions = new System.Windows.Forms.Panel();
+            this.holeView = new System.Windows.Forms.ListView();
+            this.addBtn = new System.Windows.Forms.Button();
+            this.delBtn = new System.Windows.Forms.Button();
+            this.btnStat = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.statstrp.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tab_main.SuspendLayout();
+            this.tab_holemgr.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bh_image)).BeginInit();
+            this.holeActions.SuspendLayout();
             this.SuspendLayout();
             // 
             // appMenu
@@ -117,6 +124,8 @@
             // 
             // tab_holemgr
             // 
+            this.tab_holemgr.Controls.Add(this.holeView);
+            this.tab_holemgr.Controls.Add(this.holeActions);
             this.tab_holemgr.Location = new System.Drawing.Point(4, 22);
             this.tab_holemgr.Name = "tab_holemgr";
             this.tab_holemgr.Padding = new System.Windows.Forms.Padding(3);
@@ -167,6 +176,56 @@
             this.bh_image.TabIndex = 6;
             this.bh_image.TabStop = false;
             // 
+            // holeActions
+            // 
+            this.holeActions.Controls.Add(this.btnStat);
+            this.holeActions.Controls.Add(this.delBtn);
+            this.holeActions.Controls.Add(this.addBtn);
+            this.holeActions.Dock = System.Windows.Forms.DockStyle.Top;
+            this.holeActions.Location = new System.Drawing.Point(3, 3);
+            this.holeActions.Name = "holeActions";
+            this.holeActions.Size = new System.Drawing.Size(375, 27);
+            this.holeActions.TabIndex = 0;
+            // 
+            // holeView
+            // 
+            this.holeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.holeView.Location = new System.Drawing.Point(3, 30);
+            this.holeView.Name = "holeView";
+            this.holeView.Size = new System.Drawing.Size(375, 325);
+            this.holeView.TabIndex = 1;
+            this.holeView.UseCompatibleStateImageBehavior = false;
+            // 
+            // addBtn
+            // 
+            this.addBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.addBtn.Location = new System.Drawing.Point(0, 0);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(41, 27);
+            this.addBtn.TabIndex = 0;
+            this.addBtn.Text = "Add";
+            this.addBtn.UseVisualStyleBackColor = true;
+            // 
+            // delBtn
+            // 
+            this.delBtn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.delBtn.Location = new System.Drawing.Point(41, 0);
+            this.delBtn.Name = "delBtn";
+            this.delBtn.Size = new System.Drawing.Size(41, 27);
+            this.delBtn.TabIndex = 1;
+            this.delBtn.Text = "Del";
+            this.delBtn.UseVisualStyleBackColor = true;
+            // 
+            // btnStat
+            // 
+            this.btnStat.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnStat.Location = new System.Drawing.Point(82, 0);
+            this.btnStat.Name = "btnStat";
+            this.btnStat.Size = new System.Drawing.Size(41, 27);
+            this.btnStat.TabIndex = 2;
+            this.btnStat.Text = "Stat";
+            this.btnStat.UseVisualStyleBackColor = true;
+            // 
             // BlackHoleUIMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +247,9 @@
             this.statstrp.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tab_main.ResumeLayout(false);
+            this.tab_holemgr.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bh_image)).EndInit();
+            this.holeActions.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +269,11 @@
         private System.Windows.Forms.Label bh_title;
         private System.Windows.Forms.PictureBox bh_image;
         private System.Windows.Forms.TabPage tab_holemgr;
+        private System.Windows.Forms.ListView holeView;
+        private System.Windows.Forms.Panel holeActions;
+        private System.Windows.Forms.Button delBtn;
+        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button btnStat;
     }
 }
 

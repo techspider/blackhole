@@ -23,8 +23,7 @@ namespace black_hole
 
         private void BlackHoleUIMain_Load(object sender, EventArgs e)
         {
-            Hole h = new Hole("Yes no amazing!", Environment.CurrentDirectory + "\\myhole");
-            h.StartTimer();
+            
         }
     }
 }
