@@ -15,5 +15,16 @@ namespace black_hole
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BlackHoleUIMain_Load(object sender, EventArgs e)
+        {
+            Hole h = new Hole("Yes no amazing!", Environment.CurrentDirectory + "\\myhole");
+            h.StartTimer();
+        }
     }
 }

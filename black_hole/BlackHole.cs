@@ -5,13 +5,12 @@ using System.Windows.Forms;
 
 namespace black_hole
 {
-    static class Program
+    public static class BlackHole
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        public static List<Hole> Holes { get; set; } = new List<Hole>();
+
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
