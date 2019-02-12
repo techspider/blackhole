@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace black_hole
 {
-    public partial class Form1 : Form
+    public partial class BlackHoleUIMain : Form
     {
-        public Form1()
+        public BlackHoleUIMain()
         {
             InitializeComponent();
         }
