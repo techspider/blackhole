@@ -14,6 +14,7 @@ namespace black_hole
         public string Name { get; set; } = "Untitled Hole";
         public int HoleScanInterval { get; set; } = 100;
         public string Target { get; set; } = "(null)";
+        public HoleType Type { get; set; } = HoleType.Folder;
 
         public Hole() { }
 
@@ -26,11 +27,19 @@ namespace black_hole
             HoleScanInterval = holeScanInt;
         }
 
-        public void StartTimer()
+        public void Start()
         {
-            HoleTimer.Interval = HoleScanInterval;
-            HoleTimer.Tick += HoleTimer_Tick;
-            HoleTimer.Start();
+            switch(Type)
+            {
+                case HoleType.Folder:
+                    HoleTimer.Interval = HoleScanInterval;
+                    HoleTimer.Tick += HoleTimer_Tick;
+                    HoleTimer.Start();
+                    break;
+                case HoleType.FUSE:
+
+                    break;
+            }
         }
 
         public void Cleanup(bool detachTarget = true)

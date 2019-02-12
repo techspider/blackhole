@@ -25,5 +25,19 @@ namespace black_hole
         {
             
         }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddHoleUI ahui = new AddHoleUI();
+            if(ahui.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

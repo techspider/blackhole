@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddHoleUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHoleUI.Designer.cs">
+      <DependentUpon>AddHoleUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="BlackHoleUIMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +61,11 @@
     </Compile>
     <Compile Include="BlackHole.cs" />
     <Compile Include="Hole.cs" />
+    <Compile Include="HoleType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddHoleUI.resx">
+      <DependentUpon>AddHoleUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BlackHoleUIMain.resx">
       <DependentUpon>BlackHoleUIMain.cs</DependentUpon>
     </EmbeddedResource>
