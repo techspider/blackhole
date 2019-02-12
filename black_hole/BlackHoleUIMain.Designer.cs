@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackHoleUIMain));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.appMenu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statstrp = new System.Windows.Forms.StatusStrip();
@@ -41,23 +41,23 @@
             this.bh_desc = new System.Windows.Forms.Label();
             this.bh_title = new System.Windows.Forms.Label();
             this.bh_image = new System.Windows.Forms.PictureBox();
-            this.menuStrip1.SuspendLayout();
+            this.appMenu.SuspendLayout();
             this.statstrp.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tab_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bh_image)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // appMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.appMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(389, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.appMenu.Location = new System.Drawing.Point(0, 0);
+            this.appMenu.Name = "appMenu";
+            this.appMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.appMenu.Size = new System.Drawing.Size(389, 24);
+            this.appMenu.TabIndex = 0;
+            this.appMenu.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -174,15 +174,16 @@
             this.ClientSize = new System.Drawing.Size(389, 430);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statstrp);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.appMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.appMenu;
+            this.MinimumSize = new System.Drawing.Size(400, 450);
             this.Name = "BlackHoleUIMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Black Hole";
             this.Load += new System.EventHandler(this.BlackHoleUIMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.appMenu.ResumeLayout(false);
+            this.appMenu.PerformLayout();
             this.statstrp.ResumeLayout(false);
             this.statstrp.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -195,7 +196,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip appMenu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statstrp;
